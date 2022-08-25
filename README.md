@@ -6,7 +6,7 @@ Intrucciones para compilar el código:
 ```
 git clone <link_repo>
 ```
-- Localizarte en la carpeta dónde se encuentra el repositorio, abrir una terminal y ejecutar el siguiente comando
+- Localizarte en la carpeta dónde se encuentra el repositorio, abrir una terminal y ejecutar el siguiente comando:
  ```
  python3 ml_from_scratch.py
  ```
