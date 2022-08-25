@@ -77,7 +77,7 @@ if __name__ == "__main__":
     df = pd.read_csv('datasets/abalone.data', names=cols)
     df_x = df.iloc[:, 5:8].to_numpy().tolist()
     df_y = df.iloc[:, 4].to_numpy().tolist()
-    params = np.zeros(len(df_x[0]) + 1).tolist()
+    params = np.zeros(len(df_x[0])+1).tolist()
 
     # split data into test and train params
     x_train, x_test, y_train, y_test = train_test_split(df_x, df_y, random_state=1)
@@ -91,9 +91,9 @@ if __name__ == "__main__":
     while True:  # run gradient descent until local minima is reached
         oldparams = list(params)
         params = gradient_descent(params, x_train, y_train, a)	
-        cost(params, x_train, y_train)  # only used to show errors, it is not used in calculation
+        cost(params, x_train, y_train)  # calculate the MSE
         epochs += 1
-        if(oldparams == params or epochs == 2000):   # local minima is found when there is no further improvement
+        if(oldparams == params or epochs == 2000):   # local minimum is found when there is no further improvement
             # print ("samples:")
             # print(x_train)
             print ("final params:")
