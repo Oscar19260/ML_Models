@@ -10,6 +10,5 @@ git clone <link_repo>
  ```
  python3 ml_from_scratch.py
  ```
- 
-
-
+<br>
+Para esta actividad el dataset seleccionado se obtuvo en el Machine Learning Repository, espeficamente del abalone (https://archive.ics.uci.edu/ml/datasets/Abalone) para predecir el peso total de orejas de mar (gasterópodos marinos del género Haliotis) a partir de otros pesos que fueron calculados individualmente.
